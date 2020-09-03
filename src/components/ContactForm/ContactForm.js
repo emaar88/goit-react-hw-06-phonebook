@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classes from "./ContactForm.module.css";
 import { connect } from "react-redux";
 import contactsActions from "../../redux/actions/contactActions";
+import Button from "react-bootstrap/Button";
 
 class ContactForm extends Component {
   state = {
@@ -57,9 +58,15 @@ class ContactForm extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <button className={classes.button} type="submit">
+          <Button
+            variant="primary"
+            // className={classes.button}
+            type="submit"
+            size="lg"
+            block
+          >
             Add Contact
-          </button>
+          </Button>
         </form>
       </div>
     );

@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classes from "./Contact.module.css";
+import Button from "react-bootstrap/Button";
 
 const Contact = ({ name, number, onDeleteContact }) => {
   return (
     <>
-      {name}: {number}
-      <button onClick={onDeleteContact} className={classes.button}>
-        Delete
-      </button>
+      <p>{name}</p> <p>{number}</p>
+      <Button onClick={onDeleteContact} variant="danger">
+        X
+      </Button>
     </>
   );
 };
