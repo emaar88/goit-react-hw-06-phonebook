@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "../Contact/Contact";
+import Contact from "../Contact/";
 import contactsActions from "../../redux/actions/contactActions";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";

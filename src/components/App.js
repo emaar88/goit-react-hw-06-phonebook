@@ -1,9 +1,9 @@
 import classes from "./App.module.css";
 
 import React from "react";
-import ContactForm from "./ContactForm/ContactForm";
-import ContactList from "./ContactList/ContactList";
-import Filter from "./Filter/Filter";
+import ContactForm from "./ContactForm/";
+import ContactList from "./ContactList/";
+import Filter from "./Filter/";
 
 export default function App() {
   return (

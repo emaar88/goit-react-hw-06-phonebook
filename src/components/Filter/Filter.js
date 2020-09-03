@@ -8,13 +8,15 @@ const Filter = ({ value, onRename }) => {
   return (
     <>
       <div className={classes.container}>
-        <label>Find contacts by name</label>
-        <input
-          className={classes.formFilter}
-          type="text"
-          value={value}
-          onChange={(e) => onRename(e.target.value)}
-        />
+        <form>
+          <label>Find contacts by name</label>
+          <input
+            className={classes.formFilter}
+            type="text"
+            value={value}
+            onChange={(e) => onRename(e.target.value)}
+          />
+        </form>
       </div>
     </>
   );

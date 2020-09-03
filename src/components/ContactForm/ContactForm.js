@@ -58,13 +58,7 @@ class ContactForm extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <Button
-            variant="primary"
-            // className={classes.button}
-            type="submit"
-            size="lg"
-            block
-          >
+          <Button variant="primary" type="submit" size="lg" block>
             Add Contact
           </Button>
         </form>
